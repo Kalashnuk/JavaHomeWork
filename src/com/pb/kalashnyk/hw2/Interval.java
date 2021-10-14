@@ -2,7 +2,7 @@ package com.pb.kalashnyk.hw2;
 
 import java.util.Scanner;
 
-public class int3 {
+public class Interval {
     public static void main(String[] args) {
         Scanner scann = new Scanner(System.in);
         System.out.println("Enter a number between 0 and 100");
