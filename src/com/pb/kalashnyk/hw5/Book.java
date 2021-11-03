@@ -10,6 +10,9 @@ public class Book {
         this.writer = writer;
         this.year = year;
     }
+    String getInfo1() {
+        return "[Name: " + name + ", writer: " + writer + ", year: "
+                + year + "]";}
 
 
 //    public void setName(String name) {

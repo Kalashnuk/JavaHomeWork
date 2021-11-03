@@ -14,20 +14,31 @@ public class Library {
     Book book5 = new Book("Eneyida","Kotlyarevsky I.P.",1798);
 
         Book[] books = {book1,book2,book3};
-        for (Book x : books){
-            System.out.println(x.toString());
-        }
-        for (Book book : books) {
-            System.out.println(book);
-        }
+        for (Book x : books){}
+//            System.out.println(x.toString());
+//        }
+//        for (Book book : books) {
+//            System.out.println(book);
+//        }
 //        Bookshelf[] booshe = new Bookshelf[book1,book2,book3]
 
     //Reader[] = new Reader[4]
     Reader r1 = new Reader("Ivanov I.I",100001,"FKD-11","01.05.1991","+380990000001");
-    Reader r2 = new Reader("Petrov P. P.",100002,"MD-21","10.07.1990","+38099000002");
-    Reader r3 = new Reader("Ivanov I.I",100003,"EKD-22","15.09.1992","+380990000003");
+    Reader r2 = new Reader("Petrov P.P.",100002,"MD-21","10.07.1990","+38099000002");
+    Reader r3 = new Reader("Ivanov I.I.",100003,"EKD-22","15.09.1992","+380990000003");
 
-    System.out.println("rybuf" + book1 + "rybuf 2" + book1 + "rybuf 3" + book1);
+        System.out.println("Oll books :");
+    System.out.println("Book 1 " + book1.getInfo1());
+    System.out.println("Book 2 " + book2.getInfo1());
+    System.out.println("Book 3 " + book3.getInfo1());
+    System.out.println("Book 4 " + book4.getInfo1());
+    System.out.println("Book 5 " + book5.getInfo1());
+        System.out.println("Oll readers :");
+    System.out.println("Student 3 " + r1.getInfo2());
+    System.out.println("Student 3 " + r2.getInfo2());
+    System.out.println("Student 3 " + r3.getInfo2());
+        System.out.println(books.length);
+
 
 
 //        r1.stud = "Ivanov I.I";

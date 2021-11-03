@@ -14,6 +14,10 @@ public class Reader {
         this.dat = dat;
         this.phone = phone;
     }
+    String getInfo2() {
+        return "[Student: " + stud + ", ticket №: " + ticketNum + ", faculty: "
+                + faculty + ", dat: " + dat + ", phone namber:" +  phone + "]";
+    }
 }
 //
 //
