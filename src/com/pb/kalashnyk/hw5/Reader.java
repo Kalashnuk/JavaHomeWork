@@ -4,61 +4,85 @@ public class Reader {
     String stud;
     int ticketNum;
     String faculty;
-    String dat;
+    String date;
     String phone;
 
-    public Reader(String stud,int ticketNum,String faculty,String dat,String phone){
+    public Reader(String stud,int ticketNum,String faculty,String date,String phone){
         this.stud = stud;
         this.ticketNum = ticketNum;
         this.faculty = faculty;
-        this.dat = dat;
+        this.date = date;
         this.phone = phone;
     }
     String getInfo2() {
         return "[Student: " + stud + ", ticket №: " + ticketNum + ", faculty: "
-                + faculty + ", dat: " + dat + ", phone namber:" +  phone + "]";
+                + faculty + ", date: " + date + ", phone namber:" +  phone + "]";
     }
+
+    public String getStud() {
+        return stud;
+    }
+
+    public void setStud(String stud) {
+        this.stud = stud;
+    }
+
+    public int getTicketNum() {
+        return ticketNum;
+    }
+
+    public void setTicketNum(int ticketNum) {
+        this.ticketNum = ticketNum;
+    }
+
+    public String getFaculty() {
+        return faculty;
+    }
+
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void takeBook(String stud){
+        System.out.println( stud + " Take 3 books: ");
+    }
+    public void takeBook(String stud, String name) {
+        System.out.println( stud + "Take books: " + name + name + name );
+    }
+    public void takeBook(String stud, String name,String writer,String date, int year){
+        System.out.println(stud + "Take books" + name + writer + date + year + name + writer + date + year
+                + name + writer + date + year );
+    }
+    public void returnBook(String stud){
+        System.out.println( stud + "Return 3 books: ");
+    }
+    public void returnBook(String stud, String name) {
+        System.out.println( stud + "Return books: " + name + name + name );
+    }
+    public void returnBook(String stud, String name,String writer,String date, int year){
+        System.out.println(stud + "Return books" + name + writer + date + year + name + writer + date + year
+                + name + writer + date + year );}
+
+//    public void takeBook (String stud, String... names) {
+//        System.out.println(stud + "взял несколько книг");
+//        for (String name : names) {
+//            System.out.println(name);
+//        }
+//        }
 }
-//
-//
-//    public static void main(String[] args) {
-//
-//        Reader r1 = new Reader();
-//        Reader r2 = new Reader();
-//        Reader r3 = new Reader();
-//        Reader r4 = new Reader();
-//        Reader r5 = new Reader();
-//
-//        r1.stud = "Ivanov I.I";
-//        r1.ticketNum = 100001;
-//        r1.faculty = "FKD-11";
-//        r1.dat = 01.05 .1991;
-//        r1.phone = 380990000001;
-//
-//        r2.stud = "Petrov P. P.";
-//        r2.ticketNum = 100002;
-//        r2.faculty = "MD-21";
-//        r2.dat = 10.07 .1990;
-//        r2.phone = 380990000002;
-//
-//        r3.stud = "Ivanov I.I";
-//        r3.ticketNum = 100001;
-//        r3.faculty = "EKD-22";
-//        r3.dat = 15.09 .1992;
-//        r3.phone = 380990000003;
-//    }
-//
-//    public void takeBook(String stud){
-//        System.out.println(stud +,"Take 3 books");
-//    }
-//    public void takeBook(String stud) {
-//        System.out.println(stud +, "Take 3 books: "+ b1.name);
-//    }
-//    public void takeBook(String name, String writer, int year){
-//        System.out.println(stud,"Take 3 books");}
-//    String getInfo() {
-////        return "[модель: " + r1.stud + ", номер: " + number + ", вес: "
-////                + weight + ", заряд: " + batteryIndicator + "]";
-//        //test upd upd upd upd
-
-
