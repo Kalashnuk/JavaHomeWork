@@ -8,7 +8,7 @@ public class Library {
     public static void main(String[] args) {
 
     Book[] books = new Book[5];
-    Reader[] = new Reader[4];
+    Reader[] = new Reader[3];
 
     Book book1 = new Book("White Fang","Jack London",1906);
     Book book2 = new Book("The Lord of the Rings","J. R. R. Tolkien",1954);
