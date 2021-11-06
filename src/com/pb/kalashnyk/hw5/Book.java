@@ -39,6 +39,10 @@ public class Book {
         return "[Name: " + name + ", writer: " + writer + ", year: "
                 + year + "]";
     }
+    String getInfo3() {
+        return " " + name + " (" + writer + ","
+                + year + ")";
+    }
     public void sendMessage(String... books) {
         System.out.println("Сообщение отравляется на номера: ");
             for (String number : books) {

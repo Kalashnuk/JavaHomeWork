@@ -1,6 +1,16 @@
 package com.pb.kalashnyk.hw5;
 
+import com.pb.kalashnyk.hw3.Array;
+
+import java.util.Arrays;
+
 public class Reader {
+
+    private static int bookCount = 0;
+
+    public static int getPhoneCount() {
+        return bookCount;}
+
     String stud;
     int ticketNum;
     String faculty;
@@ -13,8 +23,9 @@ public class Reader {
         this.faculty = faculty;
         this.date = date;
         this.phone = phone;
+
     }
-    String getInfo2() {
+    public String getInfo2() {
         return "[Student: " + stud + ", ticket №: " + ticketNum + ", faculty: "
                 + faculty + ", date: " + date + ", phone namber:" +  phone + "]";
     }
@@ -59,30 +70,42 @@ public class Reader {
         this.phone = phone;
     }
 
-    public void takeBook(String stud){
-        System.out.println( stud + " Take 3 books: ");
-    }
-    public void takeBook(String stud, String name) {
-        System.out.println( stud + "Take books: " + name + name + name );
-    }
-    public void takeBook(String stud, String name,String writer,String date, int year){
-        System.out.println(stud + "Take books" + name + writer + date + year + name + writer + date + year
-                + name + writer + date + year );
-    }
-    public void returnBook(String stud){
-        System.out.println( stud + "Return 3 books: ");
-    }
-    public void returnBook(String stud, String name) {
-        System.out.println( stud + "Return books: " + name + name + name );
-    }
-    public void returnBook(String stud, String name,String writer,String date, int year){
-        System.out.println(stud + "Return books" + name + writer + date + year + name + writer + date + year
-                + name + writer + date + year );}
 
-//    public void takeBook (String stud, String... names) {
-//        System.out.println(stud + "взял несколько книг");
-//        for (String name : names) {
-//            System.out.println(name);
-//        }
-//        }
+    public void takeBook(int bookCount){
+        System.out.println(stud + "Take " + bookCount+ " books:");
+
+    }
+
+    public void takeBook(String... names) {
+        System.out.println(stud + "Take books: ");
+        for (String name : names) {
+            System.out.println(name);
+            bookCount++;
+        }
+    }
+    public void takeBook(Book... books) {
+            System.out.println(stud + "Take books: ");
+            for (Book book : books) {
+                System.out.println(book);
+            }
+    }
+    public void returnBook(int bookCount){
+        System.out.println(stud + "Return " + bookCount+ " books:");
+
+    }
+
+    public void returnBook(String... names) {
+        System.out.println(stud + "Return books: ");
+        for (String name : names) {
+            System.out.println(name);
+            bookCount++;
+        }
+    }
+    public void returnBook(Book... books) {
+        System.out.println(stud + "Return books: ");
+        for (Book book : books) {
+            System.out.println(book);
+        }
+    }
 }
+
