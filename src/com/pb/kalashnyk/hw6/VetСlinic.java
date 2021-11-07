@@ -1,46 +1,41 @@
 package com.pb.kalashnyk.hw6;
 
-public class VetСlinic {
+import java.lang.reflect.Constructor;
+
+public class VetСlinic  {
     static void delimiter() {
         System.out.println("-----------------------------------------------------------------------------------------");
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-//        Animal animal = new Animal("Asus");
+        Animal animal1 = new Animal("Rat", "ches","Home1");
+        Cat cat = new Cat(7,"red","Cat Garfild", "fish","Home");
+        Dog dog = new Dog(3,"angry","Dog Rex","meat","booth");
+        Horse horse = new Horse(7,"Superfast","Horse Ironhart", "hay","stall");
 
-        Animal animal1 = new Animal("Cat Garfild", "fish","Home");
-        Animal animal2 = new Animal("Dog Rex", "meat","booth");
-        Animal animal3 = new Animal("Cat Ironhart", "hay","stall");
+        Animal[] animals = new Animal[]{animal1,cat,dog,horse};
 
-        Cat cat = new Cat();
-        cat.setAge(7);
-        cat.setOther("he is red");
-
-        Dog dog = new Dog();
-        dog.setAge(11);
-        dog.setOther("angry");
-
-        Horse horse = new Horse();
-        horse.setAge(4);
-        horse.setOther("super fast");
-
-        Animal[] animals = new Animal[]{cat,dog,horse};//dog,horse}
-        System.out.println("55555555555555");
         delimiter();
         for (Animal n: animals){
             n.makeNoise();
+            n.sleep();
+            n.eat();
         }
         delimiter();
-        for (Animal s: animals){
-            s.sleep();
-        }
+        System.out.println("eq 1 2: " + animal1.equals(cat));
+        System.out.println("eq 1 3: " + animal1.equals(dog));
+        System.out.println("eq 2 4: " + cat.equals(horse));
         delimiter();
-        for (Animal e: animals){
-            e.eat();
-        }
+        System.out.println("hashCode 1: " + animal1.hashCode());
+        System.out.println("hashCode 2: " + cat.hashCode());
+        System.out.println("hashCode 3: " + dog.hashCode());
+        System.out.println("hashCode 3: " + horse.hashCode());
         delimiter();
-        for (Animal v: animals){
-            v.treatAnimal();
+        for(Animal animal: animals) {
+            Class veterinarianClazz = Class.forName("com.pb.kalashnyk.hw6.Veterinarian");
+            Constructor constr = veterinarianClazz.getConstructor(new Class[]{});
+            Object obj = constr.newInstance();
+            ((Veterinarian) obj).treatAnimal(animal);
         }
 
     }

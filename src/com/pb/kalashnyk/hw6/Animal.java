@@ -1,9 +1,9 @@
 package com.pb.kalashnyk.hw6;
 
 public class Animal {
-    private String name;
-    private String food;
-    private String location;
+    public String name;
+    public String food;
+    public String location;
 
     public Animal(String name,String food,String location){
         this.name = name;
@@ -36,12 +36,21 @@ public class Animal {
     }
 
     public void makeNoise() {
-        System.out.println( name + "animal voice");
+        System.out.println(" animal voice");
     }
     public void sleep(){
-        System.out.println( name + "animal sleep");
+        System.out.println(" animal sleep");
     }
     public void eat(){
-        System.out.println( name + "animal eat" + food);
+        System.out.println(" animal eat" + food);
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", food='" + food + '\'' +
+                ", location='" + location + '\'' +
+                '}';
     }
 }
