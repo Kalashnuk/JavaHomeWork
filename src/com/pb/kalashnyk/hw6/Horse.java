@@ -34,21 +34,21 @@ public class Horse extends Animal{
     }
     @Override
     public void sleep(){
-        System.out.println(" animal run");
+        System.out.println("like to run");
     }
     @Override
     public void eat(){
-        System.out.println(" drinks water");
+        System.out.println("drinks water.");
     }
 
     @Override
     public String toString() {
         return "Horse{" +
-                "name='" + name + '\'' +
-                ", food='" + food + '\'' +
-                ", location='" + location + '\'' +
+                "name=" + name +
+                ", food=" + food +
+                ", location=" + location +
                 ", age=" + age +
-                ", other='" + other + '\'' +
+                ", other=" + other +
                 '}';
     }
 

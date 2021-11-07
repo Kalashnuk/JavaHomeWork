@@ -34,22 +34,22 @@ public class Dog extends Animal{
     }
     @Override
     public void sleep(){
-        System.out.println(" walks in the yard");
+        System.out.println("walks in the yard");
     }
     @Override
     public void eat(){
         super.eat();
-        System.out.println(" and loves gnaws a bone");
+        System.out.println("and loves gnaws a bone.");
     }
 
     @Override
     public String toString() {
         return "Dog{" +
-                "name='" + name + '\'' +
-                ", food='" + food + '\'' +
-                ", location='" + location + '\'' +
+                "name=" + name +
+                ", food=" + food +
+                ", location=" + location +
                 ", age=" + age +
-                ", other='" + other + '\'' +
+                ", other=" + other +
                 '}';
     }
 

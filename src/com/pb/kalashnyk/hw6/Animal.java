@@ -36,13 +36,13 @@ public class Animal {
     }
 
     public void makeNoise() {
-        System.out.println(" animal voice");
+        System.out.println(name+ " some animal voice");
     }
     public void sleep(){
-        System.out.println(" animal sleep");
+        System.out.println("sleep ");
     }
     public void eat(){
-        System.out.println(" animal eat" + food);
+        System.out.println("eat " + food);
     }
 
     @Override

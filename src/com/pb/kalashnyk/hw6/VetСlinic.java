@@ -8,10 +8,10 @@ public class VetСlinic  {
     }
     public static void main(String[] args) throws Exception {
 
-        Animal animal1 = new Animal("Rat", "ches","Home1");
-        Cat cat = new Cat(7,"red","Cat Garfild", "fish","Home");
-        Dog dog = new Dog(3,"angry","Dog Rex","meat","booth");
-        Horse horse = new Horse(7,"Superfast","Horse Ironhart", "hay","stall");
+        Animal animal1 = new Animal("Rat", "cheese","in a burrow.");
+        Cat cat = new Cat(7,"red","Cat Garfild", "fish","home.");
+        Dog dog = new Dog(3,"angry","Dog Rex","meat","in a booth");
+        Horse horse = new Horse(5,"Superfast","Horse Ironhart", "hay","in astall.");
 
         Animal[] animals = new Animal[]{animal1,cat,dog,horse};
 

@@ -36,21 +36,21 @@ public class Cat extends Animal {
     @Override
     public void sleep(){
         super.sleep();
-        System.out.println("sleep near the window");
+        System.out.println("near the window");
     }
     @Override
     public void eat(){
-        System.out.println(" animal drinks milk");
+        System.out.println("drinks milk.");
     }
 
     @Override
     public String toString() {
         return "Cat{" +
-                "name='" + name +
-                ", food='" + food +
-                ", location='" + location +
+                "name " + name +
+                ", food " + food +
+                ", location=" + location +
                 ", age=" + age +
-                ", other='" + other + '\'' +
+                ", other=" + other +
                 '}';
     }
 
