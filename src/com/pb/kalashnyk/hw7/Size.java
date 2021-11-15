@@ -1,51 +1,26 @@
 package com.pb.kalashnyk.hw7;
 
 public enum Size {
-    XXS,
-    XS,
-    S,
-    M,
-    L;
+    XXS("child size",32),
+    XS("adult size",34),
+    S("adult size",36),
+    M("adult size",38),
+    L("adult size",40);
 
-    private String size;
-    Size(String size){
-        this.size = size
+
+    private String description;
+    private int euroSize;
+
+    Size (String description, int euroSize) {
+        this.description = description;
+        this.euroSize = euroSize;
     }
 
-
-//    public void getDescription();{
-//        if (XXS){
-//        System.out.println("detskiy")}
-//        else if (XS, S, M, L){
-//            System.out.println("vzrosliy")
-//        }
-//    }
-
-    public void getDescription(){
-        switch (size){
-            case XXS:
-                return; XXS = Size.valueOf("32");
-            case XS:
-                return; XXS = Size.valueOf("34");
-            case S:
-                return; XXS =  Size.valueOf("36");
-            case M:
-                return; XXS = Size.valueOf("38");
-            case L:
-                return; XXS =  Size.valueOf("40");
-        }
+    public String getDescription() {
+        return description;
+    }
+    public int getEuroSize() {
+        return euroSize;
     }
 
-    public void getDescription1(XXS, XS, S, M, L)
-        ("32", "34", "36", "38", "40");
-
-    public void getEuroSize();{
-        switch (size){
-            case XXS:
-                System.out.println("detskiy");
-                break;
-
-        }
-
-    }
 }
