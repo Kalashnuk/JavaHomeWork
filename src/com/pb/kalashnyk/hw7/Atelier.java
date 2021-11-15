@@ -9,9 +9,11 @@ public class Atelier {
         Pants pants = new Pants("D&G pants", Size.M, 42, "black");
         Pants pants2 = new Pants("D&G pants", Size.XXS, 37, "blue");
         Skirt skirt = new Skirt("Versace skirt", Size.XS, 75, "red");
-        Tie tie = new Tie("Hugo Boss", Size.L, 35, "gray");
+        Skirt skirt2 = new Skirt("Armani skirt", Size.L, 90, "yellow");
+        Tie tie = new Tie("Hugo Boss tie", Size.L, 35, "gray");
+        Tie tie2 = new Tie("Versace tie", Size.M, 33, "green");
 
-        Clothes[] clothes = new Clothes[]{tshirt, pants, pants2, skirt, tie};
+        Clothes[] clothes = new Clothes[]{tshirt, pants, pants2, skirt, skirt2, tie, tie2};
 
         delimiter();
         dressMan(clothes);
