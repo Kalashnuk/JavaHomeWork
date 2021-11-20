@@ -13,17 +13,18 @@ public class OnlineShop {
         String confirmPasswd;
 
         Auth auth = new Auth();
-        try {
-            System.out.println("Authorization");
-            delimiter();
-            System.out.print("Enter your new username: ");
-            login = scan.nextLine();
-            System.out.print("Enter a new password: ");
-            passwd = scan.nextLine();
-            System.out.print("Repeat password: ");
-            confirmPasswd = scan.nextLine();
-            auth.signUp(login, passwd, confirmPasswd);
 
+        System.out.println("Authorization");
+        delimiter();
+        System.out.print("Enter your new username: ");
+        login = scan.nextLine();
+        System.out.print("Enter a new password: ");
+        passwd = scan.nextLine();
+        System.out.print("Repeat password: ");
+        confirmPasswd = scan.nextLine();
+
+        try {
+            auth.signUp(login, passwd, confirmPasswd);
             delimiter();
             System.out.println("Sign in to your account");
             delimiter();
