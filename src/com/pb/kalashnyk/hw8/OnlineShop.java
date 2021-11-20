@@ -22,7 +22,6 @@ public class OnlineShop {
             passwd = scan.nextLine();
             System.out.print("Repeat password: ");
             confirmPasswd = scan.nextLine();
-            System.out.println("");
             auth.signUp(login, passwd, confirmPasswd);
 
             delimiter();
@@ -34,8 +33,8 @@ public class OnlineShop {
             passwd = scan.nextLine();
             auth.signIn(login, passwd);
 
-        } catch (WrongLoginException | WrongPasswordException e) {
-            System.out.println(e.getMessage());
+        } catch (WrongLoginException | WrongPasswordException ex) {
+            System.out.println(ex.getMessage());
         }
     }
 }

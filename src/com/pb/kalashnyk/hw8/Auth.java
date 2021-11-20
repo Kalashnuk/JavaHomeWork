@@ -15,17 +15,15 @@ public class Auth {
             throw new WrongLoginException("Error! Login is incorrect. \n(It should be " +
                     "5-20 symbols, only Latin letters and numbers)");
         }
-
-        // verification password
-        if (!password.equals(confirmPassword)) {
-            throw new WrongPasswordException("Error! Password is incorrect. \n(It should be" +
-                    " 5-20 symbols, only Latin letters and numbers and underscore)");
-        }
-
         if (password.matches("[a-zA-Z0-9_]{5,20}")) {
             this.password = password;
         } else {
             throw new WrongPasswordException("Error! Password does not match");
+        }
+
+        if (!password.equals(confirmPassword)) {
+            throw new WrongPasswordException("Error! Password is incorrect. \n(It should be" +
+                    " 5-20 symbols, only Latin letters and numbers and underscore)");
         }
     }
 
