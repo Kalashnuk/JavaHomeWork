@@ -15,8 +15,8 @@ class FileNumbers {
         Random random = new Random();
         try (BufferedWriter writer = Files.newBufferedWriter(path)){
 
-            for (int x=1; x<10; x++){
-                        for (int i=1; i<10; i++){
+            for (int x=1; x<=10; x++){
+                        for (int i=1; i<=10; i++){
                             int a = (int) ( Math.random() * 99 );
                             writer.write( a + " ");
                         }writer.newLine();
