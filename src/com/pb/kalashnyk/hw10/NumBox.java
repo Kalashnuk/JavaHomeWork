@@ -101,7 +101,7 @@ public class NumBox <T extends Number> {
             e2.printStackTrace();
         }
 
-        System.out.println("Print element index 5: "+objFloat.get(3));
+        System.out.println("Print element index 4: "+objFloat.get(3));
         System.out.println("Print elements: "+objFloat.length());
         System.out.println("Print average: "+objFloat.average());
         System.out.println("Print sum of elements: "+objFloat.sum());
