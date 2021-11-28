@@ -80,8 +80,8 @@ public class NumBox <T extends Number> {
         delimiter();
         System.out.println("Print element index [5]: "+objInt.get(4));
         System.out.println("Print elements: "+objInt.length());
-        System.out.println("Print sum of elements: "+objInt.sum());
         System.out.println("Print average: "+objInt.average());
+        System.out.println("Print sum of elements: "+objInt.sum());
         System.out.println("Print maximum element: "+objInt.max());
         delimiter();
 
@@ -103,8 +103,8 @@ public class NumBox <T extends Number> {
 
         System.out.println("Print element index 5: "+objFloat.get(3));
         System.out.println("Print elements: "+objFloat.length());
-        System.out.println("Print sum of elements: "+objFloat.sum());
         System.out.println("Print average: "+objFloat.average());
+        System.out.println("Print sum of elements: "+objFloat.sum());
         System.out.println("Print maximum element: "+objFloat.max());
 
     }
