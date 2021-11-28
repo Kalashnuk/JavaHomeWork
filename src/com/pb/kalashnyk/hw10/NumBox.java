@@ -77,6 +77,7 @@ public class NumBox <T extends Number> {
             System.out.println("The array is full. Array length :  " + objInt.getSize());
             e.printStackTrace();
         }
+        System.out.println("Integer print: ");
         delimiter();
         System.out.println("Print element index [5]: "+objInt.get(4));
         System.out.println("Print elements: "+objInt.length());
@@ -100,7 +101,8 @@ public class NumBox <T extends Number> {
             System.out.println("The array is full. Array length :  " + objFloat.getSize());
             e2.printStackTrace();
         }
-
+        System.out.println("Float print: ");
+        delimiter();
         System.out.println("Print element index 4: "+objFloat.get(3));
         System.out.println("Print elements: "+objFloat.length());
         System.out.println("Print average: "+objFloat.average());
