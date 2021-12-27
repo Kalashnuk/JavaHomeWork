@@ -5,18 +5,18 @@ import java.util.*;
 class Producer implements Runnable{
 
     private final List list;
-    private final int SIZE;
+    private final int size;
 
     public Producer(List list, int size) {
         this.list = list;
-        this.SIZE = size;
+        this.size = size;
     }
 
     @Override
     public void run() {
         while (true) {
             synchronized (list) {
-                while (list.size() == SIZE) {
+                while (list.size() == size) {
                     try {
                         System.out.println("Producer is waiting ...");
                         list.wait();
@@ -36,11 +36,11 @@ class Producer implements Runnable{
 class Consumer implements Runnable {
 
     private  final List list;
-    private final int SIZE;
+    private final int size;
 
     public Consumer(List list, int size) {
         this.list = list;
-        this.SIZE = size;
+        this.size = size;
     }
 
     @Override
