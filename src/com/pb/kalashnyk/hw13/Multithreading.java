@@ -69,8 +69,8 @@ public class Multithreading {
         List list = new ArrayList();
         int size = 3;
 
-        Thread producer = new Thread(new Producer(list, size), "Producer");
-        Thread consumer = new Thread(new Consumer(list, size), "Consumer");
+        Thread producer = new Thread(new Producer(list,size),"Producer");
+        Thread consumer = new Thread(new Consumer(list,size),"Consumer");
 
         producer.start();
         consumer.start();
