@@ -55,7 +55,7 @@ class Consumer implements Runnable {
                         e.printStackTrace();
                     }
                 }
-                System.out.println("Consumer consumed: " + list.remove(0) +" items");
+                System.out.println("Consumer consumed: " + list.remove(0) + " items");
                 list.notifyAll();
             }
         }
